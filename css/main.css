@@ -93,6 +93,26 @@ input {
   font-size: 1.5rem;
 }
 
+.promotion {
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.promotion__card {
+  background-image: url(/images/article-image-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .quality_content {
   display: flex;
   flex-direction: column;
@@ -107,6 +127,11 @@ input {
   color: #767676;
   font-weight: bold;
   font-size: 1.6rem;
+}
+
+.quality__description {
+  text-align: center;
+  width: 650px;
 }
 
 /*# sourceMappingURL=main.css.map */

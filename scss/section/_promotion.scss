@@ -1,1 +1,27 @@
 @use "../abstract/variables" as*;
+
+
+.promotion{
+    background-color: $background-promotion;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.promotion__card{
+    background-image: url(/images/article-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+// jen sui a mettre le text a droite de ma carte different
+//de ce qui est demander mais soi faire une rota image
+//soit displaicolumnreverse ...
