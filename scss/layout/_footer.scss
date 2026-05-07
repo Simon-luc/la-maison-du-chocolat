@@ -1,2 +1,23 @@
-@use "../abstract/variables"  as*;
+@use "../abstract/variables" as *;
 
+.footer {
+    // ton style de footer ici
+
+    &__logo {
+        // le style pour ton 
+    }
+
+    &__span{
+
+    }
+
+    &__link {
+
+    }
+
+    &__copyright {
+
+    }
+
+
+}

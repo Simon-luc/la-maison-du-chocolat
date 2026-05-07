@@ -1,0 +1,27 @@
+@use "../abstract/variables" as *;
+
+
+
+$primaryColor: #E83B89;
+$secondColor: #FFFFFF;
+
+
+// mixin 
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+@mixin button {
+    background-color: $primaryColor;
+    color: $secondColor;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: none;
+}
+

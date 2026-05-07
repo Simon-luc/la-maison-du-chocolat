@@ -1,2 +1,36 @@
-@use "../abstract/variables" as*;
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 20px;
+
+}
+
+.header__title {
+
+    display: flex;
+    flex-direction: row;
+    gap: 0px 8px;
+
+
+    &-span {
+        color: $framboise;
+    }
+}
+
+.header__navbar {
+
+    li {
+        display: inline-block;
+        margin: 10px;
+    }
+
+}
+
 

@@ -1,14 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap");
 /*font
 */
 /*couleur
 */
 body {
-  background-color: aqua;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Crete Round", serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+ul a {
+  text-decoration: none;
+  color: inherit;
+}
+
+input {
+  padding: 5px 9px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #767676;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: row;
+  gap: 0px 8px;
+}
+.header__title-span {
+  color: #E83B89;
+}
+
+.header__navbar li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.hero {
+  background-image: url("/images/main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  align-self: center;
+  width: 100%;
+  padding: 100px;
+  margin-top: 30px;
+}
+
+.hero__subtitle {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+
+.hero__span {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.hero__button {
+  margin-top: 90px;
+  background-color: #E83B89;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 30px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.quality_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.quality__subtitle {
+  color: #767676;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 /*# sourceMappingURL=main.css.map */

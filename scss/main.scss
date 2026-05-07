@@ -1,10 +1,15 @@
+//import des polices et fichier (police) interne ou externe use en 1er import apres
 
 
-@use "components/base";
-@use "components/buttons";
-@use "layout/footer";
+@use "base/base";
+@use "base/reset";
+@use "abstract/mixins";
 @use "layout/header";
+@use "layout/footer";
 @use "section/contact";
 @use "section/hero";
 @use "section/promotion";
 @use "section/quality";
+
+
+

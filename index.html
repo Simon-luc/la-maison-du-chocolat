@@ -5,129 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap"
+        rel="stylesheet">
+
     <title>Maquette du chocolat</title>
 </head>
 
 <body>
     <header class="header">
-        <nav class="header_title">
-            <h1>La maison du <span>Chocolat.</span></h1>
-            <nav class="header_navbar">
-                <ul>
-                    <li><a href="#">ACCUEIL</a></li>
-                    <li><a href="#">LA CHOCOLATERIE</a></li>
-                    <li><a href="#">RECETTE</a></li>
-                    <li><a href="#">ACTUS</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                </ul>
-            </nav>
+        <h1 class="header__title">La maison du <span class="header__title-span"> Chocolat.</span></h1>
+        <nav class="header__navbar">
+            <ul>
+                <li><a href="#"><b>ACCUEIL</b></a></li>
+                <li><a href="#"><b>LA CHOCOLATERIE</b></a></li>
+                <li><a href="#"><b>RECETTE</b></a></li>
+                <li><a href="#"><b>ACTUS</b></a></li>
+                <li><a href="#"><b>CONTACT</b></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section class="head">
-            <div class="head_title">
-                <h1>NOUVELLE SAISON</h1>
-                <h1><b>NOUVEAUX CHOCOLATS</b></h1>
-            </div>
-            <div class="head_button">
-                <button>Par ici</button>
-            </div>
+        <section class="hero">
+            <p class="hero__subtitle">NOUVELLE SAISON</p>
+                <span class="hero__span">NOUVEAUX CHOCOLATS</span>
+            
+            <button class="hero__button">Par ici</button>
         </section>
 
-        <article class="quality">
-            <div class="quality_img">
-            </div>
-            <div class="quality_text">
-                <h2> QUALITE</h2>
-                <p>Une charte en 36 points encadre la qualité
+        <section class="quality">
+            <div class="quality_content">
+                <img class="quality__image" src="/images/steps-icon-1.jpg" alt="qualité">
+                <p class="quality__subtitle"> QUALITE</p>
+                <p class="quality__description">Une charte en 36 points encadre la qualité
                     de nos chocolats et l'activité de nos
                     boutiques.
                 </p>
             </div>
+        </section>
 
-            <div class="quality_img">
-            </div>
-            <div class="quality_text">
-                <h2> ECOLOGIE</h2>
-                <p>Nous privilégions et encourageons les
+
+        <section class="quality">
+            <div class="quality_content">
+                <img class="quality__image" src="/images/steps-icon-2.jpg" alt="Ecologie">
+                <p class="quality__subtitle"> ECOLOGIE</p>
+                <p class="quality__description">Nous privilégions et encourageons les
                     modes de culture, de récolte et de
                     préparation 100% naturels,
                 </p>
             </div>
-
-            <div class="quality_img">
-            </div>
-            <div class="quality_text">
-                <h2>EQUITABLE</h2>
-                <p>La prime du commerce équitable et le prix
+        </section>
+        <section class="quality">
+            <div class="quality_content">
+                <img class="quality__image" src="/images/steps-icon-3.png" alt="Equitable">
+                <p class="quality__subtitle"> EQUITABLE</p>
+                <p class="quality__description">La prime du commerce équitable et le prix
                     minimum garantissent aux petits producteurs
                     une juste rémunération.
                 </p>
             </div>
+        </section>
 
 
-        </article>
+
 
         <section class="promotion">
-            <div class="promotion_section">
-                <div class="promotion_text">
-                    <h2><b>LE CLUB</b></h2>
-                    <p><i> Inscrivez-vous dès
-                            maintenant et profitez de
-                            nos offres spéciales!
-                        </i></p>
-                    <button>Plus d'infos</button>
-                </div>
-                <div class="promotion_img">
-                    <img src="" alt="carte membre">
-                </div>
-            </div>
-            <div class="promotion_section">
-                <div class="promotion_text">
-                    <h2><b>NOS ACTUS</b></h2>
-                    <p><i>Offres spéciales,
-                            nouvelles gammes de
-                            produits, Evènements...
-                        </i></p>
-                    <button>Plus d'infos</button>
-                </div>
-                <div class="promotion_img">
-                    <img src="" alt="carte membre">
+
+            <div class="promotion__card">
+                <div class="promotion__text">
+                    <h2 class="promotion__title">LE CLUB</h2>
+                    <p class="promotion__description">
+                        Inscrivez-vous dès
+                        maintenant et profitez de
+                        nos offres spéciales!
+                    </p>
+                    <button class="promotion__button">Plus d'infos</button>
                 </div>
             </div>
+
+            <div class="promotion__card">
+                <div class="promotion__text">
+                    <h2 class="promotion__title">NOS ACTUS</h2>
+                    <p class="promotion__description">
+                        Offres spéciales,
+                        nouvelles gammes de
+                        produits, Evènements...
+                    </p>
+                    <button class="promotion__button">Plus d'infos</button>
+                </div>
+            </div>
+
+
         </section>
     </main>
 
     <section class="contact">
-        <div class="contact_header">
-            <h2>CONTACTEZ-NOUS</h2>
-        </div>
-        <div class="contact_text">
-            <p>Nous sommes une entreprise de chocolateris prpoposant toutes sorte de chocolats mais aussi des cours pour vous permettre de préparer
-                vous-même vos chocolats.
-            </p>
-        </div>
-        <div class="contact_formulaire">
-        <div class="contact_formu">
-            <label for="Nom" >Nom</label>
-            <input type="text" id="Nom" placeholder="Votre nom">
-        </div>
-        <div class="contact_formu">
-            <label for="Nom" >Nom</label>
-            <input type="text" id="Nom" placeholder="Votre nom">
-           
-        </div>
-        <div class="contact_btn">
-            <button>OK</button>
-        </div>
-    </div>
+        <h2 class="contact__title">CONTACTEZ-NOUS</h2>
+        <p class="contact__description">Nous sommes une entreprise de chocolateris prpoposant toutes sorte de chocolats
+            mais aussi des cours pour
+            vous permettre de préparer
+            vous-même vos chocolats.
+        </p>
+
+        <form class="contact_formulaire">
+            <div class="contact_form-group">
+                <label class="contact__label" for="Nom">Nom</label>
+                <input class="contact__input" type="text" id="Nom" placeholder="Votre nom">
+            </div>
+            <div class="contact_form-group">
+                <label class="contact__label" for="Nom">Nom</label>
+                <input class="contact__input" type="text" id="Nom" placeholder="Votre nom">
+            </div>
+            <button class="contact__form-button">OK</button>
+            </div>
+        </form>
     </section>
 
-<footer>
-    <h2> <b>La Maison du <span>chocolat.</span></b></h2>
-</footer>
-
-<p>Copyright tous drois réservés.</p>
+    <footer class="footer">
+        <h2 class="footer__logo"><a class="footer__link">La Maison du <span class="footer__span">chocolat.</span></a>
+        </h2>
+        <p class="footer__copyright">Copyright tous drois réservés.</p>
+    </footer>
 
 </body>
 

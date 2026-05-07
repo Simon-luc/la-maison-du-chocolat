@@ -1,1 +1,44 @@
-@use "../abstract/variables" as*;
+@use "../abstract/variables" as *;
+@use "../abstract/mixins" as *;
+
+
+.hero {
+    background-image: url("/images/main.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 100px;
+    margin-top: 30px;
+    
+    
+
+}
+
+.hero__subtitle {
+    color: $white;
+    font-size : 2rem;
+}
+
+.hero__span {
+    display:block;
+    text-align: center;
+    font-size : 2rem;
+    font-weight: bold;
+    color: $white;
+}
+
+.hero__button {
+    margin-top: 90px;
+    background-color: $primaryColor;
+    color: $secondColor;
+    border-radius: 5px;
+    padding: 15px 30px;
+    border: none;
+    font-size : 1.5rem;
+
+}
