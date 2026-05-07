@@ -1,0 +1,11 @@
+{
+
+  "scripts": {
+    "dev": "npx sass --watch scss:css"
+  },
+
+
+  "dependencies": {
+    "sass": "^1.99.0"
+  }
+}
