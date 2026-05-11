@@ -1,27 +1,70 @@
 @use "../abstract/variables" as*;
+@use "../abstract/mixins" as *;
 
 
-.promotion{
+
+.promotion {
+
+
+   
+    @include flex-center;
     background-color: $background-promotion;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-}
+    margin: 90px 20px;
+    padding: 50px;
 
-.promotion__card{
-    background-image: url(/images/article-image-1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
+    &__card {
+        width: 90%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 10px 0px;
+        
+        @media (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            max-width: 70%;
+            border: 2px solid black;
+        
+        }
+        
+    }
+
+    &__card--club {
+        background-image: url("/images/article-image-1.jpg");
+    }
+    &__card--actus {
+        background-image: url("/images/article-image-2.jpg");
+    }
+
+    &__content {
+        @include flex-center;
+        background-color: white;
+        width: 30%;
+        
+    }
+
+
+    &__title {
+        border-bottom: 2px solid gray;
+        padding: 40px;
+    }
+
+    &__description{
+        width: 50%;
+        text-align: center;
+        margin: 15px 0px;
+    }
+
+
+    &__button {
+        background-color: $framboise;
+        color: $white;
+        border-radius: 5px;
+        padding: 15px 30px;
+        border: none;
+        margin: 20px 0px;
+    }
+
 }
-// jen sui a mettre le text a droite de ma carte different
-//de ce qui est demander mais soi faire une rota image
-//soit displaicolumnreverse ...

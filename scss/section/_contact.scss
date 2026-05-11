@@ -1,1 +1,60 @@
 @use "../abstract/variables" as*;
+@use "../abstract/mixins" as *;
+
+.contact {
+
+    &__title {
+        font-size: 2rem;
+        font-style: bold;
+        text-align: center;
+        padding: 20px;
+        border-bottom: 2px solid hsl(212, 66%, 68%);
+        margin: 20px;
+    }
+
+    &__description {
+        text-align: center;
+        margin: 20px;
+    }
+
+    &_formulaire {
+        @include flex-center;
+        margin-bottom: 20px;
+
+    }
+
+    @media (min-width: 1024px) {
+
+        &_formulaire {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+
+        }
+
+
+
+    }
+
+    &_form-group {
+        margin: 5px;
+
+        &__input {
+            padding: 15px 20px;
+            margin: 0 5px;
+            border-color: hsla(0, 0%, 21%, 0.11);
+
+        }
+    }
+
+    button {
+        margin-top: 5px;
+        background-color: $framboise;
+        color: $white;
+        border-radius: 5px;
+        padding: 8px;
+        border: none;
+
+    }
+
+}

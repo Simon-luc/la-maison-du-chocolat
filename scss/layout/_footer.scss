@@ -1,23 +1,41 @@
 @use "../abstract/variables" as *;
 
 .footer {
-    // ton style de footer ici
+    background-color: $footer-color;
+    font-family: $font-header_title;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+
+    font-style: bold;
+
+
 
     &__logo {
-        // le style pour ton 
-    }
-
-    &__span{
-
+        font-family: $font-header_title;
     }
 
     &__link {
+        color: $white;
+        font-size: 2rem;
+    }
 
+    &__span {
+        color: $framboise;
+        font-family: $font-header_title;
     }
 
     &__copyright {
+        font-family: $font-body;
 
     }
 
 
+}
+
+footer {
+    margin: 80px;
+    gap: 30px;
 }

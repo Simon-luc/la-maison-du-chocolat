@@ -2,8 +2,7 @@
 
 
 
-$primaryColor: #E83B89;
-$secondColor: #FFFFFF;
+
 
 
 // mixin 
@@ -18,8 +17,8 @@ $secondColor: #FFFFFF;
 
 
 @mixin button {
-    background-color: $primaryColor;
-    color: $secondColor;
+    background-color: $framboise;
+    color: $white;
     border-radius: 5px;
     padding: 15px 30px;
     border: none;

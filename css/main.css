@@ -52,8 +52,105 @@ input {
 }
 
 .header__navbar li {
+  flex-wrap: nowrap;
   display: inline-block;
   margin: 10px;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    margin: 50px;
+    padding: 50px;
+  }
+  .header__title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header .header__navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-end;
+    align-self: flex-end;
+    margin: 20px 0px;
+  }
+}
+.footer {
+  background-color: #444444;
+  font-family: "Crete Round", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-style: bold;
+}
+.footer__logo {
+  font-family: "Crete Round", serif;
+}
+.footer__link {
+  color: #FFFFFF;
+  font-size: 2rem;
+}
+.footer__span {
+  color: #E83B89;
+  font-family: "Crete Round", serif;
+}
+.footer__copyright {
+  font-family: "Roboto", sans-serif;
+}
+
+footer {
+  margin: 80px;
+  gap: 30px;
+}
+
+.contact__title {
+  font-size: 2rem;
+  font-style: bold;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid hsl(212, 66%, 68%);
+  margin: 20px;
+}
+.contact__description {
+  text-align: center;
+  margin: 20px;
+}
+.contact_formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+@media (min-width: 1024px) {
+  .contact_formulaire {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+}
+.contact_form-group {
+  margin: 5px;
+}
+.contact_form-group__input {
+  padding: 15px 20px;
+  margin: 0 5px;
+  border-color: hsla(0, 0%, 21%, 0.11);
+}
+.contact button {
+  margin-top: 5px;
+  background-color: #E83B89;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
 }
 
 .hero {
@@ -94,44 +191,100 @@ input {
 }
 
 .promotion {
-  background-color: #efefef;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #efefef;
+  margin: 90px 20px;
+  padding: 50px;
 }
-
 .promotion__card {
-  background-image: url(/images/article-image-1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 90%;
+  border-radius: 10px;
   background-position: center;
-  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px 0px;
+}
+@media (min-width: 768px) {
+  .promotion__card {
+    display: flex;
+    flex-direction: row;
+    max-width: 70%;
+    border: 2px solid black;
+  }
+}
+.promotion__card--club {
+  background-image: url("/images/article-image-1.jpg");
+}
+.promotion__card--actus {
+  background-image: url("/images/article-image-2.jpg");
+}
+.promotion__content {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: white;
+  width: 30%;
+}
+.promotion__title {
+  border-bottom: 2px solid gray;
+  padding: 40px;
+}
+.promotion__description {
+  width: 50%;
+  text-align: center;
+  margin: 15px 0px;
+}
+.promotion__button {
+  background-color: #E83B89;
+  color: #FFFFFF;
+  border-radius: 5px;
+  padding: 15px 30px;
+  border: none;
+  margin: 20px 0px;
 }
 
+.quality {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+@media (min-width: 768px) {
+  .quality {
+    flex-direction: row;
+  }
+}
 .quality_content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  justify-content: space-around;
 }
-
+.quality_image {
+  width: 60px;
+  height: 60px;
+}
 .quality__subtitle {
   color: #767676;
   font-weight: bold;
   font-size: 1.6rem;
 }
-
 .quality__description {
+  font-size: 0.6rem;
   text-align: center;
-  width: 650px;
+}
+@media (min-width: 768px) {
+  .quality__description {
+    font-size: 0.8rem;
+    max-width: 75%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
