@@ -32,12 +32,19 @@
     }
 
     &_form-group {
+        font-size: 1.3rem;
         margin: 5px;
 
         &__input {
-            padding: 15px 20px;
             margin: 0 5px;
             border-color: hsla(0, 0%, 21%, 0.11);
+            font-size: 1.3rem;
+
+        //    &placeholder {
+        //        font-size: 1.3rem;
+        //    }
+        // agrandir le placeholder?    
+
         }
     }
 
@@ -48,6 +55,9 @@
         border-radius: 5px;
         padding: 8px;
         border: none;
+        margin-left: 5px;
+        font-size: 1.3rem;
+
 
     }
 

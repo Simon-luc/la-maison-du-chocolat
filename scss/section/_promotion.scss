@@ -48,18 +48,18 @@
 
     &__card--actus {
         background-image: url("/images/article-image-2.jpg");
-
     }
 
     &__content {
         @include flex-center;
         background-color: white;
         width: 30%;
+        border-radius: 10px 0px;
+        // je ne sais pas mettre la transparence j'ai chercher mais ça ne s'applique pas oppacity
+        //ou modifié la (O,O,0,x) la valeur x mais sa ne change rien
 
         @media (min-width: 768px) {
-            border: 2px solid black;
             width: 40%;
-
         }
     }
 

@@ -137,12 +137,13 @@ footer {
   }
 }
 .contact_form-group {
+  font-size: 1.3rem;
   margin: 5px;
 }
 .contact_form-group__input {
-  padding: 15px 20px;
   margin: 0 5px;
   border-color: hsla(0, 0%, 21%, 0.11);
+  font-size: 1.3rem;
 }
 .contact button {
   margin-top: 5px;
@@ -151,6 +152,8 @@ footer {
   border-radius: 5px;
   padding: 8px;
   border: none;
+  margin-left: 5px;
+  font-size: 1.3rem;
 }
 
 .hero {
@@ -238,10 +241,10 @@ footer {
   align-items: center;
   background-color: white;
   width: 30%;
+  border-radius: 10px 0px;
 }
 @media (min-width: 768px) {
   .promotion__content {
-    border: 2px solid black;
     width: 40%;
   }
 }
@@ -274,6 +277,7 @@ footer {
 @media (min-width: 768px) {
   .quality {
     flex-direction: row;
+    padding: 50px;
   }
 }
 .quality_content {
@@ -291,6 +295,7 @@ footer {
   color: #767676;
   font-weight: bold;
   font-size: 1.6rem;
+  margin: 30px 0px;
 }
 .quality__description {
   font-size: 0.6rem;
