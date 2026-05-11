@@ -199,6 +199,18 @@ footer {
   margin: 90px 20px;
   padding: 50px;
 }
+@media (min-width: 768px) {
+  .promotion {
+    display: flex;
+    flex-direction: row;
+  }
+  .promotion__card--club {
+    background-image: url("/images/article-image-1.jpg");
+  }
+  .promotion__card--actus {
+    background-image: url("/images/article-image-2.jpg");
+  }
+}
 .promotion__card {
   width: 90%;
   border-radius: 10px;
@@ -211,8 +223,9 @@ footer {
   .promotion__card {
     display: flex;
     flex-direction: row;
-    max-width: 70%;
-    border: 2px solid black;
+    width: 80%;
+    height: 350px;
+    margin: 10px;
   }
 }
 .promotion__card--club {
@@ -228,6 +241,12 @@ footer {
   align-items: center;
   background-color: white;
   width: 30%;
+}
+@media (min-width: 768px) {
+  .promotion__content {
+    border: 2px solid black;
+    width: 40%;
+  }
 }
 .promotion__title {
   border-bottom: 2px solid gray;
