@@ -8,29 +8,18 @@
     gap: 1rem;
 
     @media (min-width: 768px) {
-
         flex-direction: row;
-
     }
 
-
-
-
-
-
     &_content {
-
         @include flex-center;
         justify-content: space-around;
-
-
     }
 
     &_image {
         width: 60px;
         height: 60px;
     }
-
 
     &__subtitle {
         color: $font-color;
@@ -42,15 +31,9 @@
         font-size: 0.6rem;
         text-align: center;
 
-         @media (min-width: 768px) {
-
+        @media (min-width: 768px) {
             font-size: 0.8rem;
             max-width: 75%;
+        }
     }
-
-
-
-
-    }
-
 }

@@ -5,8 +5,6 @@
 
 .promotion {
 
-
-
     @include flex-center;
     background-color: $background-promotion;
     margin: 90px 20px;
@@ -24,7 +22,6 @@
         &__card--actus {
             background-image: url("/images/article-image-2.jpg");
         }
-
     }
 
 
@@ -43,9 +40,6 @@
             height: 350px;
             margin: 10px;
         }
-
-
-
     }
 
     &__card--club {
@@ -67,16 +61,12 @@
             width: 40%;
 
         }
-
     }
 
 
     &__title {
         border-bottom: 2px solid gray;
         padding: 40px;
-
-        
-
     }
 
     &__description {

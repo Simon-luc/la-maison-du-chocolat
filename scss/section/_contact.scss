@@ -20,7 +20,6 @@
     &_formulaire {
         @include flex-center;
         margin-bottom: 20px;
-
     }
 
     @media (min-width: 1024px) {
@@ -29,11 +28,7 @@
             display: flex;
             flex-direction: row;
             margin-bottom: 20px;
-
         }
-
-
-
     }
 
     &_form-group {
@@ -43,7 +38,6 @@
             padding: 15px 20px;
             margin: 0 5px;
             border-color: hsla(0, 0%, 21%, 0.11);
-
         }
     }
 

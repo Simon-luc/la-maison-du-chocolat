@@ -166,12 +166,10 @@ footer {
   padding: 100px;
   margin-top: 30px;
 }
-
 .hero__subtitle {
   color: #FFFFFF;
   font-size: 2rem;
 }
-
 .hero__span {
   display: block;
   text-align: center;
@@ -179,7 +177,6 @@ footer {
   font-weight: bold;
   color: #FFFFFF;
 }
-
 .hero__button {
   margin-top: 90px;
   background-color: #E83B89;

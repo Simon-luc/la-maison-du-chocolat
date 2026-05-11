@@ -14,31 +14,28 @@
     width: 100%;
     padding: 100px;
     margin-top: 30px;
-    
-    
 
-}
+    &__subtitle {
+        color: $white;
+        font-size: 2rem;
+    }
 
-.hero__subtitle {
-    color: $white;
-    font-size : 2rem;
-}
+    &__span {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        color: $white;
+    }
 
-.hero__span {
-    display:block;
-    text-align: center;
-    font-size : 2rem;
-    font-weight: bold;
-    color: $white;
-}
+    &__button {
+        margin-top: 90px;
+        background-color: $framboise;
+        color: $white;
+        border-radius: 5px;
+        padding: 15px 30px;
+        border: none;
+        font-size: 1.5rem;
 
-.hero__button {
-    margin-top: 90px;
-    background-color: $framboise;
-    color: $white;
-    border-radius: 5px;
-    padding: 15px 30px;
-    border: none;
-    font-size : 1.5rem;
-
+    }
 }
